@@ -38,7 +38,7 @@ function setup() {
 	mango12=new mango(900,160,40);
 
 	treeObj=new tree(1050,580);
-	groundObject=new ground(width/2,600,width,20);
+	groundObject=new ground(width/2,580,width,50);
   //create launcherObject here
   launcherObject = new Launcher(stoneObj.body,{x:225,y:400});
 
@@ -66,6 +66,8 @@ function draw() {
   mango10.display();
   mango11.display();
   mango12.display();
+  groundObject.display();
+  launcherObject.display();
 
   detectollision(stoneObj,mango1);
   detectollision(stoneObj,mango2);
